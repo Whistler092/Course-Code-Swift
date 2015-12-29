@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hello_World" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Que edad tienes?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mey-jw-u5U">
+                                <rect key="frame" x="233" y="85" width="134" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B8h-cE-FEq">
+                                <rect key="frame" x="30" y="146" width="540" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LxM-2u-dBX">
+                                <rect key="frame" x="289" y="200" width="22" height="22"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="what_did_happen_675640700.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NN3-6h-pBQ">
+                                <rect key="frame" x="30" y="232" width="540" height="347"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="347" id="0YL-MV-tLk"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NN3-6h-pBQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="6r4-v0-Fh3"/>
+                            <constraint firstItem="Mey-jw-u5U" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="65" id="BAY-4r-E8d"/>
+                            <constraint firstItem="Mey-jw-u5U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ErG-ir-Dk4"/>
+                            <constraint firstItem="B8h-cE-FEq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="N6a-uR-GM6"/>
+                            <constraint firstItem="NN3-6h-pBQ" firstAttribute="top" secondItem="LxM-2u-dBX" secondAttribute="bottom" constant="10" id="RLx-rd-Xkh"/>
+                            <constraint firstItem="LxM-2u-dBX" firstAttribute="top" secondItem="B8h-cE-FEq" secondAttribute="bottom" constant="24" id="RMt-6u-6Gq"/>
+                            <constraint firstItem="NN3-6h-pBQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vb3-ge-vAP"/>
+                            <constraint firstItem="LxM-2u-dBX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gYd-Oc-L4P"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="B8h-cE-FEq" secondAttribute="trailing" constant="10" id="hgf-Lx-gNW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NN3-6h-pBQ" secondAttribute="trailing" constant="10" id="rDw-mq-s8l"/>
+                            <constraint firstItem="B8h-cE-FEq" firstAttribute="top" secondItem="Mey-jw-u5U" secondAttribute="bottom" constant="40" id="vGm-Wh-3VU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="387" y="267"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="what_did_happen_675640700.jpg" width="850" height="569"/>
+    </resources>
+</document>
